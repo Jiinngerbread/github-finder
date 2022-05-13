@@ -1,15 +1,20 @@
-import { render } from "@testing-library/react";
-import React from "react";
+import React, { Component, Fragment} from 'react';
 import './App.css';
+import Navbar from './components/layout/Navbar';
+import Users from './components/layout/users/Users';
 
-class  App extends React.Component {
-    render() {
-        return (
-            <div className="App">
-                <h1> Hello from React </h1> 
-            </div>
-        );
-    }
+class App extends Component {
+  
+  render() {
+    return (
+      <div className='App'>
+        <Navbar title=" Github Finder"> </Navbar>  
+        <div className='container'>
+        <Users/>      
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
