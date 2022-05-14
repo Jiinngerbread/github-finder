@@ -1,8 +1,7 @@
-import React, { Component, Fragment} from 'react';
+import React, { Component} from 'react';
 import './App.css';
 import Navbar from './components/layout/Navbar';
-import Users from './components/layout/users/Users';
-
+import UserItem from './components/users/UserItem';
 class App extends Component {
   
   render() {
@@ -10,7 +9,7 @@ class App extends Component {
       <div className='App'>
         <Navbar title=" Github Finder"> </Navbar>  
         <div className='container'>
-        <Users/>      
+        <UserItem/>      
         </div>
       </div>
     );
